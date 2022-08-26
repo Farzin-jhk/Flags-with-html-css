@@ -1,0 +1,1389 @@
+.iran{
+    width: 400px;
+    height: 210px;
+    border: 1px solid black;
+    position: relative;
+    margin: 10px;
+    float: left;
+}
+.iran .green{
+    width: 100%;
+    height: 70px;
+    background-color: #1da03e;
+}
+.iran .white{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    background: url(img/emblem.png) no-repeat center/50px;
+}
+.iran .red{
+    width: 100%;
+    height: 70px;
+    background-color: #db0000;
+}
+.turkey{
+    width: 400px;
+    height: 210px;
+    background-color: #e40310;
+    position: relative;
+    margin: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.turkey .moon{
+    width: 130px;
+    height: 130px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    position: relative;
+    right: 65px;
+}
+.turkey .moon::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: #e40310;
+    border: 1px solid #e40310;
+    border-radius: 100%;
+    position: absolute;
+    right: -4px;
+    bottom: 15px;
+}
+/* .turkey .star{
+    width: 51px;
+    height: 48px;
+    background: url(img/star.png) no-repeat center/50px;
+    position: absolute;
+    transform: rotate(-15deg);
+    right: 160px;
+    bottom: 87px;
+} */
+.turkey .star-1{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 50px 50px;
+    border-color: transparent transparent white transparent;
+    transform: rotate(20deg);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -4px;
+    right: 80px;
+    transform: rotate(20deg);
+}
+.turkey .star-1 .star-2{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 50px 50px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    transform: rotate(-93deg);
+    right: 0px;
+    top: 15px;
+    z-index: 2;
+}
+.turkey .star-1 .star-2 .star-3{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    transform: rotate(93deg);
+    right: 6px;
+    top: 47px;
+    z-index: 2;
+}
+.japan{
+    width: 400px;
+    height: 210px;
+    background-color: #fff;
+    border: 1px solid black;
+    position: relative;
+    margin: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.japan .circle{
+    width: 130px;
+    height: 130px;
+    background-color: #e40310;
+    border: 1px solid #e40310;
+    border-radius: 100%;
+}
+.usa{
+    width: 400px;
+    height: 221px;
+    border: 1px solid black;
+    position: relative;
+    margin: 10px;
+    float: left;
+}
+.usa .line1{
+    width: 100%;
+    height: 17px;
+    background-color: #bc0b3c;
+}
+.usa .line2{
+    width: 100%;
+    height: 17px;
+    background-color: #fff;
+}
+.usa .stars{
+    width: 44%;
+    height: 54%;
+    background: #002164 url(img/star.png) repeat center/25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.uk{
+    width: 400px;
+    height: 210px;
+    background-color: #001b69;
+    border: 1px solid #001b69;
+    position: relative;
+    margin: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.uk .main-line{
+    width: 100%;
+    height: 22%;
+    border: solid #fff;
+    border-width: 17px 0;
+    background-color: #c9082a;
+    position: relative;
+    z-index: 2;
+}
+.uk .red-line1{
+    width: 15%;
+    height: 81.8px;
+    background-color: #c9082a;
+    border: solid #fff;
+    border-width: 0 17px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.uk .red-line2{
+    content: "";
+    width: 15%;
+    height: 82px;
+    background-color: #c9082a;
+    border: solid #fff;
+    border-width: 0 17px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+.uk .bottom-left{
+    background-color: #c9082a;
+    border: solid white;
+    border-width: 20px 0px 10px;
+    width: 69%;
+    height: 7%;
+    bottom: 0px;
+    left: -95px;
+    position: absolute;
+    transform: rotate(-30deg);
+}  
+.uk .top-left{
+    background-color: #c9082a;
+    border: solid white;
+    border-width: 20px 0px 10px;
+    width: 76%;
+    height: 7%;
+    top: 0px;
+    left: -115px;
+    position: absolute;
+    transform: rotate(29deg);
+}
+.uk .top-right{
+    background-color: #c9082a;
+    border: solid #fff;
+    border-width: 10px 0 20px;
+    width: 55%;
+    height: 8%;
+    position: absolute;
+    top: 4px;
+    right: -53px;
+    transform: rotate(-29deg);
+}
+.uk .bottom-right{
+    background-color: #c9082a;
+    border: solid #fff;
+    border-width: 10px 0 20px;
+    width: 60%;
+    height: 8%;
+    position: absolute;
+    bottom: 11px;
+    right: -64px;
+    transform: rotate(29deg);
+}
+.south-africa{
+    width: 400px;
+    height: 210px;
+    background-color: #007945;
+    border: 1px solid #007945;
+    position: relative;
+    margin: 10px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+.south-africa .red-box{
+    width: 50%;
+    height: 30%;
+    background-color: #e23629;
+    border: solid #fff;
+    border-width: 0 0 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+.south-africa .blue-box{
+    width: 50%;
+    height: 30%;
+    background-color: #00048b;
+    border: solid #fff;
+    border-width: 15px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+.south-africa .red-box::before{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 145px 78px 0;
+    border-color: transparent white transparent transparent;
+    position: absolute;
+    top: 0px;
+    right: 200px;
+}
+.south-africa .red-box::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 120px 63.5px 0;
+    border-color: transparent #e23629 transparent transparent;
+    position: absolute;
+    top: 0px;
+    right: 200px;
+}
+.south-africa .blue-box::before{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 78px 145px;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    bottom: 0px;
+    right: 200px;
+}
+.south-africa .blue-box::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 63.5px 120px;
+    border-color: transparent transparent #00048b transparent;
+    position: absolute;
+    bottom: 0px;
+    right: 200px;
+}
+.south-africa .triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 75px 0 75px 150px;;
+    border-color: transparent transparent transparent #ffba0d;
+    display: flex;
+    align-items: center;
+}
+.south-africa .triangle .sec-triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0 50px 100px;;
+    border-color: transparent transparent transparent black;
+    left: 0;
+    position: absolute;
+}
+.macedonia{
+    background-color: #d91b21;
+    border: 1px solid #d91b21;
+    height: 210px;
+    width: 400px; 
+    margin: 10px;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.center-circle{
+    content: "";
+    width: 95px;
+    height: 95px;
+    border: 1px solid #d91b21;
+    border-radius: 100%;
+    background-color: #d91b21;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-circle::after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 1px solid #f8ea2a;
+    border-radius: 100%;
+    background-color: #f8ea2a;
+    position: absolute;
+}
+.bottom-center{
+    height: 58px;
+    width: 14px;
+    border: 1px solid #f8ea2a;
+    background-color: #f8ea2a;
+    bottom: 0px;
+    position: absolute;
+}
+.bottom-center::before{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 59px 23px;
+    border-color: transparent transparent #f8ea2a transparent;
+    bottom: 0px;
+    left: -23px;
+    position: absolute;
+}
+.bottom-center::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 0 0 23px;
+    border-color: transparent transparent transparent #f8ea2a;
+    bottom: 0px;
+    left: 14px;
+    position: absolute;
+}
+.top-center{
+    height: 58px;
+    width: 14px;
+    border: 1px solid #f8ea2a;
+    background-color: #f8ea2a;
+    top: 0px;
+    position: absolute;
+}
+.top-center::before{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 61px 23px;
+    border-color: transparent transparent #f8ea2a transparent;
+    top: 0px;
+    left: 14px;
+    position: absolute;
+    transform: scale(-1);
+}
+.top-center::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 0 0 23px;
+    border-color: transparent transparent transparent #f8ea2a;
+    top: 0px;
+    left: -23px;
+    position: absolute;
+    transform: scale(-1);
+}
+.right-center{
+    width: 38%;
+    height: 7%;
+    border: 1px solid #f8ea2a;
+    background-color: #f8ea2a;
+    position: absolute;
+    right: 0px; 
+}
+.right-center::before{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 38px 159px;
+    border-color: transparent transparent #f8ea2a transparent;
+    position: absolute;
+    right: 0px;
+    top: -38px;
+}
+.right-center::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 159px 38px 0;
+    border-color: transparent #f8ea2a transparent transparent;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+.left-center{
+    width: 38%;
+    height: 7%;
+    border: 1px solid #f8ea2a;
+    background-color: #f8ea2a;
+    position: absolute;
+    left: 0px; 
+}
+.left-center::before{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 38px 159px;
+    border-color: transparent transparent #f8ea2a transparent;
+    position: absolute;
+    left: 0px;
+    top: 15px;
+    transform: scale(-1);
+}
+.left-center::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 159px 38px 0;
+    border-color: transparent #f8ea2a transparent transparent;
+    position: absolute;
+    left: 0px;
+    top: -38px;
+    transform: scale(-1);
+}
+.left-rotate-b{
+    width: 300px;
+    height: 13px;
+    border: 1px solid #f8ea2a;
+    background-color: #f8ea2a;
+    position: absolute;
+    bottom: 0px;
+    left: -118px;
+    transform: rotate(-28deg);
+}
+.left-rotate-b::after{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 0 20px;
+    border-color: transparent transparent transparent #f8ea2a;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: rotate(-28deg);
+}
+.right-rotate-b{
+    width: 300px;
+    height: 13px;
+    border: 1px solid #f8ea2a;
+    background-color: #f8ea2a;
+    position: absolute;
+    bottom: 0px;
+    right: -118px;
+    transform: rotate(28deg);
+}
+.left-rotate-t{
+    width: 300px;
+    height: 13px;
+    border: 1px solid #f8ea2a;
+    background-color: #f8ea2a;
+    position: absolute;
+    top: 0px;
+    left: -118px;
+    transform: rotate(28deg);
+}
+.right-rotate-t{
+    width: 300px;
+    height: 13px;
+    border: 1px solid #f8ea2a;
+    background-color: #f8ea2a;
+    position: absolute;
+    top: 0px;
+    right: -118px;
+    transform: rotate(-28deg);
+}
+.cape_verde{
+    background-color: #003594;
+    border: 1px solid #003594;
+    height: 210px;
+    width: 400px; 
+    margin: 10px;
+    float: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.white_line{
+    background-color: white;
+    border: 1px solid #003594;
+    width: 100%;
+    height: 27%;
+    position: relative;
+    bottom: -21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red_line{
+    background-color: #d01a22;
+    border: 1px solid #d01a22;
+    width: 100%;
+    height: 34%;
+}
+.star_top{
+    background: #003594 url(img/star.png) no-repeat center / 25px;
+    width: 9%;
+    height: 11%;
+    position: absolute;
+    top: 51px;
+    left: 116px;
+}
+.star_top_left{
+    background: #003594 url(img/star.png) no-repeat center / 25px;
+    width: 9%;
+    height: 11%;
+    position: absolute;
+    top: 68px;
+    left: 78px;
+}
+.star_top_right{
+    background: #003594 url(img/star.png) no-repeat center / 25px;
+    width: 9%;
+    height: 11%;
+    position: absolute;
+    top: 68px;
+    left: 152px;
+}
+.star_bottom{
+    background: #003594 url(img/star.png) no-repeat center / 25px;
+    width: 9%;
+    height: 11%;
+    position: absolute;
+    bottom: 15px;
+    left: 117px;
+}
+.star_bottom_left{
+    background: #003594 url(img/star.png) no-repeat center / 25px;
+    width: 9%;
+    height: 11%;
+    position: absolute;
+    bottom: 31px;
+    left: 79px;
+}
+.star_bottom_right{
+    background: #003594 url(img/star.png) no-repeat center / 25px;
+    width: 9%;
+    height: 11%;
+    position: absolute;
+    bottom: 31px;
+    left: 152px;
+}
+.s-korea{
+    width: 400px;
+    height: 210px;
+    border: 1px solid black;
+    position: relative;
+    margin: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s-korea .red-circle{
+    width: 130px;
+    height: 130px;
+    background-color: #ce2a37;
+    border: 1px solid #ce2a37;
+    border-radius: 100%;
+    position: relative;
+    z-index: 2;
+}
+.s-korea .blue-circle{
+    width: 127px;
+    height: 65px;
+    background-color: #0045a1;
+    border: solid #0045a1;
+    border-bottom-left-radius: 130px;
+    border-bottom-right-radius: 130px;
+    position: absolute;
+    top: 61px;
+    right: 5px;
+    transform: rotate(10deg);
+    z-index: 2;
+}
+.s-korea .red-circle::after{
+    content: "";
+    width: 63px;
+    height: 65px;
+    background-color: #ce2a37;
+    border: 1px solid #ce2a37;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px;
+    right: 64px;
+    z-index: 2;
+}
+.s-korea .blue-circle::after{
+    content: "";
+    width: 64px;
+    height: 65px;
+    background-color: #0045a1;
+    border: 1px solid #0045a1;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 29px;
+    left: 63px;
+    z-index: 2;
+}
+.s-korea .main-lines{
+    width: 358px;
+    height: 188px;
+    overflow: hidden;
+    background-color: #fff;
+    position: absolute;
+}
+.s-korea .main-lines .top-left{
+    position: absolute;
+    left: 42px;
+    top: 16px;
+    transform: rotate(-58deg);
+}
+.s-korea .main-lines .line{
+    width: 57px;
+    height: 8px;
+    background-color: black;
+    border: 1px solid #fff;
+    margin: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s-korea .main-lines .bottom-left{
+    position: absolute;
+    bottom: 10px;
+    left: 42px;
+    transform: rotate(58deg);
+}
+.s-korea .main-lines .line-break::after{
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.s-korea .main-lines .top-right{
+    position: absolute;
+    top: 10px;
+    right: 42px;
+    transform: rotate(58deg);
+}
+.s-korea .main-lines .bottom-right{
+    position: absolute;
+    bottom: 10px;
+    right: 42px;
+    transform: rotate(-58deg);
+}
+.chile{
+    width: 400px;
+    height: 210px;
+    border: 1px solid black;
+    position: relative;
+    margin: 10px;
+    float: left;
+}
+.chile .white-half{
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    position: relative;
+}
+.chile .white-half .blue-box{
+    width: 150px;
+    height: 100%;
+    background-color: #0036a7;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chile .white-half .blue-box::after{
+    content: "";
+    width: 65%;
+    height: 70%;
+    background: url(img/star.png) no-repeat center/65px;
+}
+.chile .red-half{
+    width: 100%;
+    height: 50%;
+    background-color: #d82719;
+    position: relative;
+}
+.bahama{
+    width: 400px;
+    height: 210px;
+    background-color: #00788c;
+    border: 1px solid #00788c;
+    position: relative;
+    margin: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bahama .yellow-line{
+    width: 100%;
+    height: 65px;
+    background-color: #ffc828;
+    position: relative;
+}
+.bahama .black-triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 106px 0 106px 190px;
+    border-color: transparent transparent transparent #000000;
+    position: absolute;
+    left: 0;
+}
+.cuba{
+    width: 400px;
+    height: 200px;
+    background-color: #fff;
+    border: 1px solid #000000;
+    position: relative;
+    margin: 15px;
+    float: left;
+}
+.cuba .line-1{
+    width: 100%;
+    height: 40px;
+    background-color: #002a8f;
+    position: relative;
+}
+.cuba .line-2{
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    position: relative;
+}
+.cuba .red-triangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 0 100px 190px;
+    border-color: transparent transparent transparent #cc0d0d;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuba::after{
+    content: "";
+    width: 65%;
+    height: 70%;
+    background: url(img/star.png) no-repeat center/80px;
+    position: absolute;
+    left: -56px;
+    top: 24px;
+}
+.congo{
+    width: 400px;
+    height: 210px;
+    background-color: #0080ff;
+    border: 1px solid #0080ff;
+    position: relative;
+    margin: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.congo .yellow-line2{
+    width: 60px;
+    height: 500px;
+    background-color: #f7d711;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transform: rotate(66deg);
+}
+.congo .yellow-line2::after{
+    content: "";
+    width: 30px;
+    height: 500px;
+    background-color: #cf081b;
+    position: absolute;
+}
+.congo::after{
+    content: "";
+    width: 65%;
+    height: 70%;
+    background: url(img/star.png) no-repeat center/80px;
+    position: absolute;
+    left: -78px;
+    top: -27px;
+}
+.qatar{
+    width: 400px;
+    height: 210px;
+    background-color: #8b0d35;
+    border: 1px solid #8b0d35;
+    position: relative;
+    margin: 10px;
+    float: left;
+}
+.qatar .white-box{
+    width: 35%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+.qatar .white-box .tri1{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 45px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    right: -45px;
+}
+.qatar .white-box .tri2{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 45px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    right: -45px;
+    top: 23px;
+}
+.qatar .white-box .tri3{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 45px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    right: -45px;
+    top: 46px;
+}
+.qatar .white-box .tri4{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 45px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    right: -45px;
+    top: 69px;
+}
+.qatar .white-box .tri5{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 45px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    right: -45px;
+    top: 92px;
+}
+.qatar .white-box .tri6{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 45px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    right: -45px;
+    top: 115px;
+}
+.qatar .white-box .tri7{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 45px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    right: -45px;
+    top: 138px;
+}
+.qatar .white-box .tri8{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 45px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    right: -45px;
+    top: 161px;
+}
+.qatar .white-box .tri9{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 45px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    right: -45px;
+    top: 186px;
+}
+.israel{
+    width: 400px;
+    height: 210px;
+    background-color: #fff;
+    border: 1px solid #000;
+    position: relative;
+    margin: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.israel::before{
+    content: "";
+    width: 100%;
+    height: 15%;
+    background-color: #0035b9;
+    position: absolute;
+    top: 20px;
+}
+.israel::after{
+    content: "";
+    width: 100%;
+    height: 15%;
+    background-color: #0035b9;
+    position: absolute;
+    bottom: 20px;
+}
+.israel .blue-triangle1{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 50px;
+    border-color: transparent transparent #0035b9 transparent;
+    position: absolute;
+}
+.israel .blue-triangle2{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 50px;
+    border-color: transparent transparent #0035b9 transparent;
+    position: absolute;
+    top: 96px;
+    transform: scale(-1);
+}
+.israel .white-triangle1{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 25px 25px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: 95px;
+    z-index: 2;
+}
+.israel .white-triangle2{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 25px 25px;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    top: 105px;
+    transform: scale(-1);
+    z-index: 2;
+}
+.burundi{
+    width: 400px;
+    height: 210px;
+    background-color: #41b225;
+    border: 1px solid #41b225;
+    position: relative;
+    margin: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.burundi .line-1{
+    width: 800px;
+    height: 30px;
+    background-color: #fff;
+    transform: rotate(152deg);
+    position: absolute;
+    left: -200px;
+    z-index: 2;
+}
+.burundi .line-2{
+    width: 800px;
+    height: 30px;
+    background-color: #fff;
+    transform: rotate(-152deg);
+    position: absolute;
+    right: -200px;
+    z-index: 2;
+}
+.burundi::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 174px 97px 204px;
+    border-color: transparent transparent #c9082a transparent;
+    position: absolute;
+    bottom: 0;
+}
+.burundi::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 206px 105px 177px;
+    border-color: transparent transparent #c9082a transparent;
+    position: absolute;
+    top: 0;
+    transform: scale(-1);
+}
+.burundi .center-circle1{
+    width: 115px;
+    height: 105px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.burundi .center-circle1 .burundi-star1{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 25px 25px;
+    border-color: transparent transparent #41b225 transparent;
+    position: absolute;
+    top: 8px;
+}
+.burundi .center-circle1 .burundi-star2{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 25px 25px;
+    border-color: transparent transparent #41b225 transparent;
+    position: absolute;
+    top: 15px;
+    transform: scale(-1);
+}
+.burundi .center-circle1 .burundi-star3{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent #c9082a transparent;
+    position: absolute;
+    top: 13px;
+    z-index: 10;
+}
+.burundi .center-circle1 .burundi-star4{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent #c9082a transparent;
+    position: absolute;
+    top: 19px;
+    transform: scale(-1);
+    z-index: 12;
+}
+.burundi .center-circle1 .burundi-star5{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 25px 25px;
+    border-color: transparent transparent #41b225 transparent;
+    position: absolute;
+    top: 53px;
+    left: 11px;
+}
+.burundi .center-circle1 .burundi-star6{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 25px 25px;
+    border-color: transparent transparent #41b225 transparent;
+    position: absolute;
+    top: 61px;
+    left: 11px;
+    transform: scale(-1);
+}
+.burundi .center-circle1 .burundi-star7{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent #c9082a transparent;
+    position: absolute;
+    top: 60px;
+    left: 21px;
+    z-index: 10;
+}
+.burundi .center-circle1 .burundi-star8{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent #c9082a transparent;
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    transform: scale(-1);
+    z-index: 12;
+}
+.burundi .center-circle1 .burundi-star9{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 25px 25px;
+    border-color: transparent transparent #41b225 transparent;
+    position: absolute;
+    top: 53px;
+    right: 11px;
+}
+.burundi .center-circle1 .burundi-star10{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 25px 25px;
+    border-color: transparent transparent #41b225 transparent;
+    position: absolute;
+    top: 61px;
+    right: 11px;
+    transform: scale(-1);
+}
+.burundi .center-circle1 .burundi-star11{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent #c9082a transparent;
+    position: absolute;
+    top: 60px;
+    right: 21px;
+    z-index: 10;
+}
+.burundi .center-circle1 .burundi-star12{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent #c9082a transparent;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    transform: scale(-1);
+    z-index: 12;
+}
+.sec-macedonia{
+    width: 400px;
+    height: 210px;
+    background-color: #d20000;
+    border: 1px solid #d20000;
+    position: relative;
+    margin: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.sec-macedonia .center-circle2{
+    width: 30px;
+    height: 30px;
+    background-color: #ffe700;
+    border: 1px solid #ffe700;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 10;
+}
+.sec-macedonia .big-triangles{
+    width: 200px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sec-macedonia .big-triangles .big-tri{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 60px 5px;
+    border-color: transparent transparent #ffe700 transparent;
+}
+.sec-macedonia .big-triangles .semi-circle1{
+    width: 5px;
+    height: 7px;
+    background-color: #ffe700;
+    border: solid #ffe700;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+}
+.sec-macedonia .big-triangles .top{
+    top: 0;
+    position: absolute;
+}
+.sec-macedonia .big-triangles .left{
+    left: 35px;
+    position: absolute;
+    transform: rotate(-90deg)
+}
+.sec-macedonia .big-triangles .bottom{
+    bottom: 0;
+    position: absolute;
+    transform: rotate(180deg);
+}
+.sec-macedonia .big-triangles .right{
+    right: 35px;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.sec-macedonia .big-triangles .left-top-45{
+    left: 50px;
+    top: 19px;
+    position: absolute;
+    transform: rotate(-51deg);
+}
+.sec-macedonia .big-triangles .left-bottom-45{
+    left: 47px;
+    bottom: 22px;
+    position: absolute;
+    transform: rotate(-124deg);
+}
+.sec-macedonia .big-triangles .right-top-45{
+    right: 50px;
+    top: 19px;
+    position: absolute;
+    transform: rotate(51deg);
+}
+.sec-macedonia .big-triangles .right-bottom-45{
+    right: 47px;
+    bottom: 22px;
+    position: absolute;
+    transform: rotate(124deg);
+}
+.sec-macedonia .big-triangles .big-tri-1{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 4px 58px 4px;
+    border-color: transparent transparent #ffe700 transparent;
+}
+.sec-macedonia .big-triangles .semi-circle-2{
+    width: 6px;
+    height: 4px;
+    background-color: #ffe700;
+    border: 1px solid #ffe700;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: absolute;
+}
+.sec-macedonia .big-triangles .left-top-25{
+    left: 69px;
+    top: -1px;
+    position: absolute;
+    transform: rotate(-26deg);
+}
+.sec-macedonia .big-triangles .left-bottom-25{
+    left: 69px;
+    bottom: 1px;
+    position: absolute;
+    transform: rotate(-154deg);
+}
+.sec-macedonia .big-triangles .right-top-25{
+    right: 69px;
+    top: -1px;
+    position: absolute;
+    transform: rotate(26deg);
+}
+.sec-macedonia .big-triangles .right-bottom-25{
+    right: 69px;
+    bottom: 1px;
+    position: absolute;
+    transform: rotate(154deg);
+}
+.sec-macedonia .big-triangles .left-left-top-25{
+    left: 35px;
+    top: 38px;
+    position: absolute;
+    transform: rotate(-71deg);
+}
+.sec-macedonia .big-triangles .left-left-bottom-25{
+    left: 33px;
+    bottom: 41px;
+    position: absolute;
+    transform: rotate(-105deg);
+}
+.sec-macedonia .big-triangles .right-right-top-25{
+    right: 35px;
+    top: 38px;
+    position: absolute;
+    transform: rotate(71deg);
+}
+.sec-macedonia .big-triangles .right-right-bottom-25{
+    right: 33px;
+    bottom: 41px;
+    position: absolute;
+    transform: rotate(105deg);
+}
